@@ -1,0 +1,509 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     background-color: #1B2631;
+
+}
+a{
+     color: white;
+     font-size: 20px;
+}
+.navbar{
+     min-height: 70px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 20px;
+}
+
+.nav-menu{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 40px;
+}
+
+.brand{
+     font-size: 2rem;
+     color: white;
+}
+
+.nav-link{
+     transition: 0.7s ease;
+}
+
+.nav-link:hover{
+     color:white
+}
+
+.hamburger{
+     display: none;
+     cursor: pointer;
+}
+
+.bar{
+     display: block;
+     width: 25px;
+     height: 3px;
+     margin: 5px;
+    -webkit-transition:all 0.3s ease-in-out ;
+     transition: all 0.3s ease-in-out;
+     background-color: black;
+}
+.btntitle{
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     background-color: #1B2631;
+
+}
+.wave-header{
+     min-height: 100vh;
+     width: 100%;
+     background-color:  #1B2631 ;
+     position: relative;
+}
+svg {
+     
+     position: absolute;
+     bottom: 0;
+     left: 0;
+}
+.top{
+     display: flex;
+     padding: 60px 25px 0 ;
+}
+.top .box1{
+     color: white;
+     padding:  0 30px 0;
+}
+.top .box1 h2{
+     font-size: 35px;
+}
+.btntop{
+     background-color: white;
+     color: #1B2631;
+     border: none;
+     padding: 15px 32px;
+     text-align: center;
+     display: inline-block;
+}
+.box2 img{
+     height: 450px ;
+     width: 500px ;
+     position: relative;
+}
+
+.social{
+     padding-top: 40px;
+     display: flex;
+     justify-content: space-around;
+     font-size: 40px;
+}
+.row{
+     display: flex;
+     justify-content: space-between;
+     width: 80%;
+     align-items: center;
+     margin: auto ;
+}
+main{
+     display: flex;
+     padding-top: 50px;   
+     
+}
+main > div{
+     border: 1px transparent;
+    
+}
+main .text{
+     border: 1px transparent;
+     padding-right: 90px;
+}
+/* .text{
+     flex-basis: 45%;
+}
+.cards-container{
+     flex-basis: 70%;
+} */
+.btntop{
+     background-color: #1B2631;
+     color: white;
+     border: none;
+     padding: 15px 32px;
+     text-align: center;
+     display: inline-block;
+
+}
+.btnmain{
+     padding-bottom: 30px;
+}
+/* .cards-container{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin-top: 100px;
+
+} */
+.card{
+     width: 290px;
+     background-color: #f0f0f0;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+     margin: 10px;
+}
+.card img{
+     width: 100%;
+     height: auto;
+}
+.card-content{
+     padding: 16px;
+     text-align: center;
+
+}
+.card-content h2{
+    
+     font-size: 15px;
+}
+
+.container1{
+     display: flex;
+     padding: 150px 0 100px 0;
+     
+}
+.testimonal{
+     padding: 60px 0 60px 0;
+}
+.swiper {
+     width: 100%;
+     height: 100%;
+}
+
+
+.swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.next-btn{
+     height: 40px;
+     width: 40px;
+     background-color: rgba(0,0,0, 0.1);
+}
+.next-btn::after,
+.next-btn::before{
+     font-size: 20px;
+     color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.text2{
+     padding-right: 60px;
+}
+.btncon1{
+     padding-top: 30px;
+}
+.img2{
+     padding-left: 80px;
+}
+.img2 img{
+     width: 400px;
+     height: 400px;
+
+}
+.container2{
+     display: flex;
+     justify-content: center;
+     padding: 80px 150px;
+     
+}
+.container2 h2 , span{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.container2 p, span{
+     font-size: 20px;
+}
+.container3{
+     display: flex;
+     padding: 20px 0 70px 0;
+}
+
+.text4{
+     padding-right: 40px;
+}
+.text4 h4 i{
+     font-size: 22px;
+     
+}
+.smalltext span{
+     padding-left: 30px ;
+
+
+}
+.smalltext h4{
+     display: flex;
+     justify-content: space-evenly;
+}
+.btncon3{
+     display: flex;
+     justify-content: center;
+     padding: 60px 150px 190px 150px;
+}
+.wave-bottom{
+     min-height: 100vh;
+     width: 100%;
+     background-color:  #1B2631 ;
+     position: relative;
+}
+.wave-bottom svg{
+     position: absolute;
+     top: 0;
+     left: 0;
+
+}
+.card-bottom{
+     padding-top: 150px;
+}
+
+.card-bottom .card{
+     padding: 3rem 0rem 3rem 1rem;
+     text-align: start;
+     margin: 1.6rem;
+}
+/* .container4{
+     height: 80vh;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #e3f2fd;
+} */
+.testimonal-wrap .container4{
+     max-width: 1180px;
+     margin: 0 auto;
+}
+.inner{
+     position: relative;
+     padding: 1.6rem 11rem;
+     text-align: center;
+     cursor: pointer;
+}
+.excert p{
+     font-size: 17px;
+     line-height: 38px;
+     color: #555;
+     font-weight: 400;
+}
+.info {
+     font-size: 17px;
+}
+
+
+
+.slide span{
+     font-size: 15px;
+}
+.slide p{
+     padding: 0 100px;
+     font-size: 20px;
+     font-weight: 500;
+     color: #333;
+}
+.container5{
+     display: flex;
+     height: 40vh;
+     background-color: #1B2631 ;
+     color: white;
+     
+}
+.container5 .text5{
+    padding-top: 80px;
+    padding-left: 70px;
+
+}
+.container5 .btnlower{
+    
+     padding-left: 80px;
+     padding-top: 80px;
+     
+}
+.text5 span{
+     font-size: 14px;
+}
+.text5 h2{
+     font-size: 30px;
+}
+
+.btnbtm{
+     background-color: #5D6D7E ;
+     color: white;
+     border: none;
+     padding: 15px 32px;
+     text-align: center;
+     display: inline-block;
+
+}
+.btnwhite{
+     background-color: #fff ;
+     color: #1B2631;
+     border: none;
+     padding: 15px 32px;
+     text-align: center;
+     display: inline-block;
+
+}
+footer {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     height: 60vh;
+     padding-bottom:  50px 0 70px 0;
+
+}
+
+.resources {
+     gap: 19%;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media(max-width:768px){
+     .hamburger{
+          display: block;
+     }
+     .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+     }
+
+     .hamburger.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+
+     }
+     .hamburger.active .bar:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+
+     }
+     
+     .nav-menu{
+          position: absolute;
+          left: -100%;
+          top: 70px;
+          gap: 0;
+          flex-direction: column;
+          background-color:  white ;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+     }
+
+     .nav-item{
+          margin: 16px 0;
+     }
+
+     .nav-menu.active{
+          left: 0;
+     }
+
+     .top{
+          display: flex;
+          flex-direction: column;
+     }
+
+     .box2 img{
+          padding:  70px 90px 70px 0;
+      
+     }
+
+     .row{
+          display: flex;
+          flex-direction: column;
+     }
+     .text{
+          padding: 0 0 40px 40px;
+     }
+
+     .main .text{
+          padding: 80px;
+     }
+
+     .container1{
+          display: flex;
+          flex-direction: column;
+     }
+     .img2 img{
+          padding:  50px 50px 50px 0 ;
+          align-items: center;
+
+     }
+     .text2{
+          padding-top: 50px;
+          padding-left: 30px;
+     }
+     .container2{
+          padding: 40px;
+     }
+     .container3{
+          display: flex;
+          flex-direction: column;
+     }
+     .text4{
+          padding-left: 30px;
+
+     }
+     .container5{
+          display: flex;
+          flex-direction: column;
+          height: 60vh;
+     }
+     footer{
+          display: flex;
+          flex-direction: column;
+          padding: 50px;
+     }
+
+}
